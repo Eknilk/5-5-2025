@@ -2,114 +2,140 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>AutoClean - Lavagem Automotiva</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estética Automotiva - Tropicália</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="p-5">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/logo.png" class="nav-img" alt="Logo AutoClean" loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Trabalhos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white p-3 shadow">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <img src="img/logo.png" alt="Logo Estética Automotiva" class="nav-img" height="60">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container my-5">
+  <main>
+    <!-- Início -->
+    <section id="inicio" class="d-flex align-items-center text-center text-white" style="height: 90vh; background: url('img/bg-car.jpg') center/cover no-repeat;">
+      <div class="container">
+        <h1 class="display-3 fw-bold">Cuidando do seu carro como se fosse único</h1>
+        <p class="lead">Lavagem • Polimento • Higienização • Vitrificação</p>
+        <a href="#servicos" class="btn btn-primary btn-lg mt-3">Conheça nossos serviços</a>
+      </div>
+    </section>
 
-        <!-- INÍCIO -->
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo à AutoClean</h1>
-                    <p class="text-white mb-3">Cuidando do seu carro com qualidade e dedicação.</p>
-                    <a href="#servicos" class="btn btn-primary btn-lg botao-inicio fw-semibold">Conheça nossos serviços</a>
-                </div>
-                <img src="img/carro-lavagem.png" alt="Carro sendo lavado com espuma" class="img-fluid img-inicio">
+    <!-- Serviços -->
+    <section id="servicos" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Nossos Serviços</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <i class="bi bi-droplet fs-1 text-primary"></i>
+                <h5 class="mt-3">Lavagem Premium</h5>
+                <p>Limpeza completa com produtos de alta qualidade.</p>
+              </div>
             </div>
-        </section>
-
-        <!-- SERVIÇOS -->
-        <section id="servicos" class="my-5 pt-6 secao-servicos" tabindex="0" aria-label="Seção sobre serviços de lavagem automotiva">
-            <div class="container d-flex align-items-center">
-                <div class="col-4 d-flex justify-content-center">
-                    <img src="img/servico.png" class="rounded-pill" width="273" height="331" alt="Profissional lavando carro" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>Nossos Serviços</h2>
-                    <p class="p-2">Oferecemos lavagem completa, polimento, higienização interna, hidratação de couro, cristalização de pintura e muito mais. Seu carro merece o melhor cuidado!</p>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <i class="bi bi-stars fs-1 text-primary"></i>
+                <h5 class="mt-3">Polimento</h5>
+                <p>Realce do brilho original e remoção de micro riscos.</p>
+              </div>
             </div>
-        </section>
-
-        <!-- GALERIA -->
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de trabalhos realizados">
-            <h2 class="text-center pt-5">Nossos Trabalhos</h2>
-            <div class="container p-3 mt-3 fundo-galeria">
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/trabalho1.jpg" class="img-fluid rounded-5" alt="Carro antes e depois da lavagem" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/trabalho2.jpg" class="img-fluid rounded-5" alt="Detalhamento interno de veículo" loading="lazy">
-                    </div>
-                </div>
-                <div class="row mt-4 justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/trabalho3.jpg" class="img-fluid rounded-5" alt="Polimento automotivo" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/trabalho4.jpg" class="img-fluid rounded-5" alt="Cristalização de pintura" loading="lazy">
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <i class="bi bi-wind fs-1 text-primary"></i>
+                <h5 class="mt-3">Higienização Interna</h5>
+                <p>Limpeza profunda de bancos, carpetes e ar-condicionado.</p>
+              </div>
             </div>
-        </section>
-
-        <!-- CONTATO -->
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario">
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" required></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
-                        </div>
-                    </form>
-                </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <i class="bi bi-shield-check fs-1 text-primary"></i>
+                <h5 class="mt-3">Vitrificação</h5>
+                <p>Proteção duradoura para a pintura do seu carro.</p>
+              </div>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="text-center p-3 fst-italic">
-        <p>Siga nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-facebook"></i>
-        <p class="mt-3">© 2025 AutoClean - Lavagem Automotiva</p>
-    </footer>
+    <!-- Galeria -->
+    <section id="galeria" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Antes e Depois</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="img/bancos.jpeg" class="img-fluid rounded shadow" alt="Carro antes da limpeza">
+          </div>
+          <div class="col-md-4">
+            <img src="img/depois1.jpg" class="img-fluid rounded shadow" alt="Carro depois da limpeza">
+          </div>
+          <div class="col-md-4">
+            <img src="img/depois2.jpg" class="img-fluid rounded shadow" alt="Carro polido">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Fale Conosco</h2>
+        <p>Agende um horário pelo WhatsApp ou envie sua mensagem pelo formulário.</p>
+        <a href="https://wa.me/5519981180362" target="_blank" class="btn btn-success btn-lg mb-4">
+          <i class="bi bi-whatsapp"></i> Chamar no WhatsApp
+        </a>
+
+        <form class="mx-auto" style="max-width: 600px;">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Seu nome" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Seu e-mail" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-1">Siga nossas redes:</p>
+    <div>
+      <i class="bi bi-instagram fs-3 mx-2"></i>
+      <i class="bi bi-facebook fs-3 mx-2"></i>
+      <i class="bi bi-tiktok fs-3 mx-2"></i>
+    </div>
+    <p class="mt-3">© 2025 Tropicália Estética Automotiva - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
